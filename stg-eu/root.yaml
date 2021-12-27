@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    name: in-cluster
+  project: default
+  source:
+    path: stg-eu/apps
+    repoURL: https://github.com/arjundandagi/chartautomation
+    targetRevision: HEAD
+    directory:
+      recurse: true
