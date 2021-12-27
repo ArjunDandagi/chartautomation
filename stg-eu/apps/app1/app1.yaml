@@ -6,7 +6,7 @@ metadata:
 spec:
   project: app1
   source:
-    path: ./deploys/
+    path: stg-eu/apps/app1/deploys/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
     directory:
