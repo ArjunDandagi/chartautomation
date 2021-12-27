@@ -5,6 +5,7 @@ metadata:
   labels:
     run: nginx-bd
   name: nginx-bd
+  namespace: default
 spec:
   containers:
   - image: nginx
