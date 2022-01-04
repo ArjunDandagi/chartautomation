@@ -2,15 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: root-app
-  namespace: argocd
+  namespace: argocd #can't create application in a different namespace 
 spec:
   destination:
     namespace: default
     name: in-cluster
-  project: default
+  project: default   #root apps can go in the default project 
   source:
     path: stg-eu/apps
     repoURL: https://github.com/arjundandagi/chartautomation
     targetRevision: HEAD
-    directory:
-      recurse: true
