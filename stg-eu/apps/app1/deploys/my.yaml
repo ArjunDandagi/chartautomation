@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx-bd
-  name: nginx-bd
+    run: nginx-my
+  name: nginx-my
   namespace: default
 spec:
   containers:
   - image: nginx
-    name: nginx-bd
+    name: nginx-my

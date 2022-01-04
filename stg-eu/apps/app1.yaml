@@ -1,12 +1,12 @@
-piVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app1
   namespace: argocd
 spec:
-  project: app1
+  project: campaigns
   source:
-    path: stg-eu/apps/deploys/
+    path: stg-eu/apps/app1/deploys/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
     directory:

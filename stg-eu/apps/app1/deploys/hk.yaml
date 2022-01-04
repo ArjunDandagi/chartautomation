@@ -5,6 +5,7 @@ metadata:
   labels:
     run: nginx-hk
   name: nginx-hk
+  namespace: default
 spec:
   containers:
   - image: nginx
