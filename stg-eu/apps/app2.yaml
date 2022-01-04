@@ -6,7 +6,7 @@ metadata:
 spec:
   project: campaigns
   source:
-    path: stg-eu/apps/app1/deploys/
+    path: stg-eu/apps/helm/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
     directory:

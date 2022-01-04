@@ -6,11 +6,9 @@ metadata:
 spec:
   project: campaigns
   source:
-    path: stg-eu/apps/helm
+    path: stg-eu/apps/helm/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
-    directory:
-      recurse: true
   destination:
     namespace: '*'
     server: https://kubernetes.default.svc
