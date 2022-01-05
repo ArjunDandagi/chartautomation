@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hk
+  name: cart-hk
   namespace: argocd
 spec:
-  project: cart-proj
+  project: cart-proj1
   source:
-    path: squad-proj/projs/cart-proj/hk.yml
+    path: squad-proj/projs/cart-proj/hk/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
   destination:

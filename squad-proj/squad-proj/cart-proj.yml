@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: cart-proj1
+  name: cart-proj
   namespace: argocd
 spec:
   clusterResourceWhitelist:

@@ -6,7 +6,7 @@ metadata:
 spec:
   project: campaigns-proj1
   source:
-    path: squad-proj/projs/campaigns-proj1/bd.yml
+    path: squad-proj/projs/campaigns-proj1/bd/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
   destination:

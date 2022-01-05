@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bd
+  name: cart-bd
   namespace: argocd
 spec:
-  project: cart-proj
+  project: cart-proj1
   source:
-    path: squad-proj/projs/cart-proj/bd.yml
+    path: squad-proj/projs/cart-proj/bd/
     repoURL: https://github.com/arjundandagi/chartautomation.git
     targetRevision: HEAD
   destination:
