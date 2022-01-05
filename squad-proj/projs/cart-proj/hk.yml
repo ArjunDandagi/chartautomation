@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Deployment 
+metadata:
+  name: hk-nginx-cart
+spec:
+  selector:
+    matchLabels:
+      app: hk-nginx-cart
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hk-nginx-cart
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+   
