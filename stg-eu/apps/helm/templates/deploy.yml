@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
-  name: nginx-{{ randAlphaNum 4 }}
+  name: nginx
 spec:
   replicas: 2
   selector:
